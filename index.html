@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>日语动词变形练习</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>日语动词变形练习</h1>
+
+        <div class="container">
+            <!-- 动词类型选择 -->
+            <select id="category-select">
+                <option value="" disabled selected hidden>
+                    请选择动词类型
+                </option>
+                <option value="て形">て形</option>
+                <option value="ます形">ます形</option>
+                <option value="ない形">ない形</option>
+                <option value="た形">た形</option>
+                <option value="意向形">意向形</option>
+                <option value="命令形">命令形</option>
+                <option value="条件形">条件形</option>
+                <option value="可能形">可能形</option>
+                <option value="被动、尊敬形">被动、尊敬形</option>
+                <option value="使役形">使役形</option>
+            </select>
+
+            <!-- 提示示例 -->
+            <div id="hint" class="hint"></div>
+
+            <!-- 题目显示 -->
+            <div id="question-box" class="question"></div>
+
+            <!-- 答案输入 -->
+            <input type="text" id="answer-input" placeholder="请输入答案..." />
+
+            <!-- 反馈区域 -->
+            <div id="feedback"></div>
+            <button id="show-answer" style="display: none">查看答案</button>
+            <button id="next-question" style="display: none">下一题</button>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
