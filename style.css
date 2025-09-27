@@ -30,6 +30,22 @@ h1 {
     text-align: center;
 }
 
+/* GitHub 图标 */
+.github-icon {
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+    vertical-align: middle;
+    filter: invert(20%) sepia(10%) saturate(0%) hue-rotate(180deg)
+        brightness(0.8);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.github-icon:hover {
+    transform: scale(1.1);
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(0.4);
+}
+
 /* 下拉菜单 */
 #category-select {
     font-size: 1rem;
